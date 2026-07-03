@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1f1c2c);
+background-size:400% 400%;
+animation:bg 15s ease infinite;
+color:white;
+
+}
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+header{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+
+}
+
+header h1{
+
+font-size:70px;
+letter-spacing:2px;
+
+}
+
+header p{
+
+font-size:22px;
+margin-top:15px;
+opacity:0.8;
+
+}
+
+.btn{
+
+margin-top:40px;
+padding:15px 40px;
+background:white;
+color:#111;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:scale(1.08);
+
+}
+
+section{
+
+width:90%;
+max-width:1200px;
+margin:60px auto;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+padding:35px;
+border-radius:20px;
+margin-bottom:35px;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+.card h2{
+
+font-size:35px;
+margin-bottom:25px;
+color:#8ee7ff;
+
+}
+
+.placeholder{
+
+height:170px;
+border:2px dashed rgba(255,255,255,.3);
+border-radius:15px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:20px;
+color:rgba(255,255,255,.45);
+
+}
+
+.gallery{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
+}
+
+.photo{
+
+height:250px;
+border-radius:18px;
+border:2px dashed rgba(255,255,255,.3);
+display:flex;
+align-items:center;
+justify-content:center;
+background:rgba(255,255,255,.04);
+
+}
+
+table{
+
+width:100%;
+border-collapse:collapse;
+text-align:center;
+
+}
+
+th,td{
+
+padding:18px;
+border:1px solid rgba(255,255,255,.2);
+
+}
+
+th{
+
+background:#00c6ff;
+
+color:black;
+
+}
+
+footer{
+
+text-align:center;
+padding:40px;
+opacity:.7;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Your Name</h1>
+
+<p>Student Portfolio</p>
+
+<a href="#about" class="btn">Explore Portfolio</a>
+
+</header>
+
+<section id="about">
+
+<div class="card">
+
+<h2>About Me</h2>
+
+<div class="placeholder">
+Write your introduction here.
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>My Achievements (Grade 6 - Grade 12)</h2>
+
+<div class="placeholder">
+
+Add all your achievements here.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Academic Performance (Grade 9 - Grade 12)</h2>
+
+<table>
+
+<tr>
+
+<th>Grade</th>
+
+<th>Percentage</th>
+
+<th>Class Rank</th>
+
+<th>Section Rank</th>
+
+</tr>
+
+<tr>
+
+<td>Grade 9</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>Grade 10</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>Grade 11</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>Grade 12</td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Photo Gallery</h2>
+
+<div class="gallery">
+
+<div class="photo">Photo 1</div>
+
+<div class="photo">Photo 2</div>
+
+<div class="photo">Photo 3</div>
+
+<div class="photo">Photo 4</div>
+
+<div class="photo">Photo 5</div>
+
+<div class="photo">Photo 6</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Skills</h2>
+
+<div class="placeholder">
+
+Programming, AI, Robotics, Leadership etc.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Certificates</h2>
+
+<div class="placeholder">
+
+Add certificates here.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Projects</h2>
+
+<div class="placeholder">
+
+Add your projects.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Participation</h2>
+
+<div class="placeholder">
+
+Competitions, Olympiads, Clubs, Workshops, Events...
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Leadership Experience</h2>
+
+<div class="placeholder">
+
+Student Council, Club Leader etc.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Community Service / Volunteering</h2>
+
+<div class="placeholder">
+
+Write volunteering activities.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Research & Publications</h2>
+
+<div class="placeholder">
+
+Research Papers, Blogs, Articles
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Languages</h2>
+
+<div class="placeholder">
+
+Languages you know.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Future Goals</h2>
+
+<div class="placeholder">
+
+Write your ambitions and vision.
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="card">
+
+<h2>Contact</h2>
+
+<div class="placeholder">
+
+Email • LinkedIn • GitHub • YouTube • Instagram
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Your Name | Student Portfolio
+
+</footer>
+
+</body>
+</html>
